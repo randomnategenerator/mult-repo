@@ -48,7 +48,7 @@ $fav-color: #9500ff;
     }
 }
 
-//use the mixin to add the styling to the msg classs
+//use the mixin to add the styling to the msg class
 .msg {
     @include message()
 }
