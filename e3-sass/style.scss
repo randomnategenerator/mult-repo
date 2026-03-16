@@ -1,19 +1,30 @@
-.msg {
-    border: 1px solid #ddd
-;
+@mixin message() {
+    border: 1px solid #ddd;
     border-radius: 5px;
-    background: #888
-;
+    background: #888;
     font-size: 1rem;
-    color: white
-;
+    color: white;
     padding: 1rem 1.25rem;
     margin: 1em 0;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .msg h1 {
-    margin: 0 0 0.2em 0;
-  }
-  
+
+    h1 {
+        margin: 0 0 0.2em 0;
+    }
+
+    &:hover {
+        background: #000000;
+    }
+
+    &.msg-info {
+        background: #40e0d0;
+        &:hover {
+            background: #008080;
+        }
+    }
+}
+
+.msg {
+    @include message()
+}
