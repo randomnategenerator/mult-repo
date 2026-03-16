@@ -20,4 +20,11 @@
 }
 .msg.msg-info:hover {
   background: #008080;
+}
+.msg.msg-warning {
+  background: #ffce1b;
+  opacity: 0;
+}
+.msg.msg-warning:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -23,6 +23,14 @@
             background: #008080;
         }
     }
+
+    &.msg-warning {
+        background: #ffce1b;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .msg {
