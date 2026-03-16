@@ -27,4 +27,10 @@
 }
 .msg.msg-warning:hover {
   opacity: 1;
+}
+.msg.msg-danger {
+  background: #ff0000;
+}
+.msg.msg-danger:hover {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
