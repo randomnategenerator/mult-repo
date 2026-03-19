@@ -1,0 +1,54 @@
+//variable used to store the hex code of violet
+$fav-color: #9500ff;
+
+//mixin used to create a function of css for the message buttons
+@mixin message() {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #888;
+    font-size: 1rem;
+    color: $fav-color;
+    padding: 1rem 1.25rem;
+    margin: 1em 0;
+    display: inline-block;
+    cursor: pointer;
+
+    h1 {
+        margin: 0 0 0.2em 0;
+    }
+
+    //hover effect makes the background of the first message darker 
+    &:hover {
+        background: #000000;
+    }
+
+    //for the info variant, use a turqouise colour and make the hover a darker turqouise
+    &.msg-info {
+        background: #40e0d0;
+        &:hover {
+            background: #008080;
+        }
+    }
+
+    //for the warning message, use a yellow background colour and only show the message if it is hovered over
+    &.msg-warning {
+        background: #ffce1b;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    //for the danger message, use a red background colour and hide if hovered over
+    &.msg-danger {
+        background: #ff0000;
+        &:hover {
+            opacity: 0;
+        }
+    }
+}
+
+//use the mixin to add the styling to the msg class
+.msg {
+    @include message()
+}
