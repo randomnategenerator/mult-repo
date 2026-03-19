@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+#falcon-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#left-button {
+    justify-self: end;
+}
+
+#falcon-gif {
+    justify-self: center;
+}
+
+#right-button {
+    justify-self: start;
+}
+
+#image-movement {
+    text-align: center;
+}
+
+.arrow-buttons {
+    padding: 25px;
+    margin: 25px;
+}
+
+/* Add specific styles for your sections, images, buttons, etc., here */
