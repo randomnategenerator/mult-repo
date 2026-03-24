@@ -7,19 +7,20 @@
     <title>Library Playground</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Add your CSS library links here -->
-    <!-- Add your JavaScript library links here -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section id="image-movement">
         <h2>Section 1: Image Movement</h2>
-        <button class="arrow-buttons" type="button">U</button>
+        <button class="arrow-buttons" id="up-button" type="button">U</button>
         <div id="falcon-section">
             <button class="arrow-buttons" id="left-button" type="button">L</button>
             <img id='falcon-gif' src="assets/falcon-center.gif">
             <button class="arrow-buttons" id="right-button" type="button">R</button>
         </div>
-        <button class="arrow-buttons" type="button">D</button>
+        <button class="arrow-buttons" id="down-button" type="button">D</button>
     </section>
 
     <section id="interactive-trivia">
@@ -37,9 +38,6 @@
         <!-- This is your creative space! -->
     </section>
 
-    <script src="https://code.jquery.com/jquery-4.0.0.js"
-        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous">
-        </script>
     <script src="scripts.js"></script>
 
     <!-- Remember to add your JavaScript file link here if you create one -->
