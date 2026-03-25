@@ -24,6 +24,17 @@ h2 {
     align-items: center;
 }
 
+#trivia-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#trivia-buttons button {
+    font-size: 25px;
+    padding: 50px;
+    margin: 25px;
+}
+
 #left-button {
     justify-self: end;
 }
@@ -36,7 +47,8 @@ h2 {
     justify-self: start;
 }
 
-#image-movement {
+#image-movement,
+#interactive-trivia {
     text-align: center;
 }
 
