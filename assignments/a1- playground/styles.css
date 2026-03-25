@@ -47,6 +47,19 @@ h2 {
     justify-self: start;
 }
 
+#dvd {
+    width: 150px;
+}
+
+#scroll-activated-image {
+    height: 1000px;
+}
+
+#choose-your-own-adventure {
+    background-image: url(assets/pac-maze.jpg);
+    height: 1000px;
+}
+
 #image-movement,
 #interactive-trivia {
     text-align: center;
