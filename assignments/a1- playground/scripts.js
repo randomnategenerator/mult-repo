@@ -41,27 +41,36 @@ $(function () {
         $(this).css('background-color', 'lime')
     })
 
-    //figure out how to make this work like i want
 
     $(window).on("scroll", function () {
-       $('#dvd').animate({
-            "marginLeft": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-            "marginTop": `+${1 + Math.floor(Math.random() * window.innerHeight)}`,
-            "marginRight": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-            "marginBottom": `+${1 + Math.floor(Math.random() * window.innerHeight)}`
-        })
-
-        console.log($(`scroll-activated-image`).css('height'))
+        $('#dvd').animate({
+            "left": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
+            "top": `+${1 + Math.floor(Math.random() * window.innerHeight)}`,
+            "right": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
+            "bottom": `+${1 + Math.floor(Math.random() * window.innerHeight)}`
+        }, 'slow')
     })
 
 
-    // $('#choose-your-own-adventure').on('mousemove', function () {
-    //     $('#dvd').animate({
-    //         "marginLeft": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-    //         "marginTop": `+${1 + Math.floor(Math.random() * window.innerHeight)}`,
-    //         "marginRight": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-    //         "marginBottom": `+${1 + Math.floor(Math.random() * window.innerHeight)}`
-    //     })
-    // })
+    $('#start-button').on('click', function () {
+        $(this).css(`display`, `none`)
+        $(`#choose-your-own-adventure`).append(`<img id="pacman" src="assets/pacman.png">`, `<img class="ghost" src="assets/ghost-1.png">`, `<img class="ghost" src="assets/ghost-2.png">`, `<img class="ghost" src="assets/ghost-3.png">`, `<img class="ghost" src="assets/ghost-4.png">`, `<img id="pellet" src="assets/pellet.webp">`)
+        // $(`#choose-your-own-adventure`).on('mousemove', function () {
+        //     $(`.ghost`).animate({
+        //         "marginLeft": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
+        //         "marginTop": `+${1 + Math.floor(Math.random() * window.innerHeight)}`,
+        //         "marginRight": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
+        //         "marginBottom": `+${1 + Math.floor(Math.random() * window.innerHeight)}`
+        //     }, 1500)
+
+            // $(this).animate({
+            //     "marginLeft": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).width()))}`,
+            //     "marginTop": `+${$(`#choose-your-own-adventure`).height() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).height()))}`,
+            //     "marginRight": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).width()))}`,
+            //     "marginBottom": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).height()))}`
+
+            // }, 1500)
+        })
+    })
 })
 

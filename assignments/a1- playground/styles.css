@@ -29,7 +29,8 @@ h2 {
     grid-template-columns: 1fr 1fr;
 }
 
-#trivia-buttons button {
+#trivia-buttons button,
+#start-button {
     font-size: 25px;
     padding: 50px;
     margin: 25px;
@@ -47,17 +48,35 @@ h2 {
     justify-self: start;
 }
 
+/* #start-button {
+    align-self: center;
+} */
+
 #dvd {
     width: 150px;
+    position: absolute;
 }
 
-#scroll-activated-image {
-    height: 1000px;
+#pacman {
+    width: 100px;
+}
+
+#pellet {
+    width: 50px;
+}
+
+.ghost {
+    width: 150px;
 }
 
 #choose-your-own-adventure {
     background-image: url(assets/pac-maze.jpg);
-    height: 1000px;
+    height: 900px;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #image-movement,
