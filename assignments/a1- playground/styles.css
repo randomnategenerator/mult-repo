@@ -29,8 +29,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
 }
 
-#trivia-buttons button,
-#start-button {
+#trivia-buttons button {
     font-size: 25px;
     padding: 50px;
     margin: 25px;
@@ -48,35 +47,46 @@ h2 {
     justify-self: start;
 }
 
-/* #start-button {
-    align-self: center;
-} */
+#start-button {
+    justify-self: start;
+    background-image: url("assets/gas-pedal.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
 
 #dvd {
     width: 150px;
     position: absolute;
 }
 
-#pacman {
-    width: 100px;
+#delorean {
+    position: relative;
+    margin-left: 900;
+    width: 300px;
 }
 
-#pellet {
-    width: 50px;
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.ghost {
-    width: 150px;
+#mph {
+    color: red;
+    font-family: "Orbitron";
+    font-size: 50px;
 }
 
 #choose-your-own-adventure {
-    background-image: url(assets/pac-maze.jpg);
+    background-image: url(assets/hill-bg.jpg);
     height: 900px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #image-movement,

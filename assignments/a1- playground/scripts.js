@@ -1,5 +1,3 @@
-// import { animate } from 'https://esm.sh/animejs';
-
 $(function () {
     $("#left-button").on(`click`, function () {
         $(`#falcon-gif`).animate({ "marginLeft": "-500px" }, 500).animate({ "marginLeft": "0px" }, 1500, "swing", function () {
@@ -51,26 +49,41 @@ $(function () {
         }, 'slow')
     })
 
+    let held = false;
+    let miles = 0;
 
-    $('#start-button').on('click', function () {
-        $(this).css(`display`, `none`)
-        $(`#choose-your-own-adventure`).append(`<img id="pacman" src="assets/pacman.png">`, `<img class="ghost" src="assets/ghost-1.png">`, `<img class="ghost" src="assets/ghost-2.png">`, `<img class="ghost" src="assets/ghost-3.png">`, `<img class="ghost" src="assets/ghost-4.png">`, `<img id="pellet" src="assets/pellet.webp">`)
-        // $(`#choose-your-own-adventure`).on('mousemove', function () {
-        //     $(`.ghost`).animate({
-        //         "marginLeft": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-        //         "marginTop": `+${1 + Math.floor(Math.random() * window.innerHeight)}`,
-        //         "marginRight": `+${1 + Math.floor(Math.random() * window.innerWidth)}`,
-        //         "marginBottom": `+${1 + Math.floor(Math.random() * window.innerHeight)}`
-        //     }, 1500)
-
-            // $(this).animate({
-            //     "marginLeft": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).width()))}`,
-            //     "marginTop": `+${$(`#choose-your-own-adventure`).height() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).height()))}`,
-            //     "marginRight": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).width()))}`,
-            //     "marginBottom": `+${$(`#choose-your-own-adventure`).width() + (Math.floor(Math.random() * $(`#choose-your-own-adventure`).height()))}`
-
-            // }, 1500)
+    function deloreanGas() {
+        if (!held) return;
+        $(`#mph`).text(miles + 'MPH')
+        if (miles >= 88){
+            $(`#delorean`).attr('src', 'assets/delorean-88.gif')
+            $(`#mph`).text("GREAT SCOTT!")
+            held = false;
+            $(`#delorean`).stop(true);
+            return;
+        }
+        $(`#delorean`).animate({ marginLeft: `+=2px` }, 16, "linear", function(){
+            miles = miles + 0.25
+            $(`#mph`).text(miles + 'MPH')
+            deloreanGas()
         })
-    })
-})
+    }
 
+    $(`#start-button`).on('mousedown', function () {
+        if (held) return;
+        held = true
+        $(`#delorean`).attr('src', 'assets/delorean-move.gif')
+        deloreanGas()
+    })
+
+    $(`#start-button`).on('mouseup', function () {
+        held = false;
+        deloreanGas()
+        if (miles <= 88) {
+            $(`#delorean`).attr('src', 'assets/delorean.webp')
+        } else {
+            $(`#delorean`).attr('src', 'assets/delorean-88.gif')
+        }
+    })
+
+})
