@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Playground</title>
+    <!-- links to external fonts, css, and libraries -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +17,14 @@
 
 </head>
 
+<!-- image movement section with buttons to control the falcon gif -->
 <body>
     <section id="image-movement">
+        <!-- my section 3 implementation: this dvd image is positioned absolutely and bounces around the entire page -->
         <img id="dvd" src="assets/dvd.png">
         <h2>Section 1: Image Movement</h2>
         <button class="arrow-buttons" id="up-button" type="button">U</button>
+        <!-- grid section keeps the buttons in the correct places -->
         <div id="falcon-section">
             <button class="arrow-buttons" id="left-button" type="button">L</button>
             <img id='falcon-gif' src="assets/falcon-center.gif">
@@ -29,11 +33,12 @@
         <button class="arrow-buttons" id="down-button" type="button">D</button>
     </section>
 
-    <!-- do a bit more here? ADD HINT-->
+    <!-- trivia section with all four different answers-->
     <section id="interactive-trivia">
         <h2>Section 2: Interactive Trivia Question</h2>
         <h2>Why Did the Chicken Cross the Road?</h2>
         <div id="trivia-buttons">
+            <!-- ids to animate the answers based on whether they are correct -->
             <button id="correct-answer"><span>To Get to the Other Side</span></button>
             <button class="wrong-answer"><span>To Get To the KFC</span></button>
             <button class="wrong-answer"><span>ediS rehtO eht ot teG oT</span></button>
@@ -41,15 +46,37 @@
         </div>
     </section>
 
+    <!-- CYOA section features a button to move the delorean image, with a speedometer! -->
     <section id="choose-your-own-adventure">
         <button id="start-button"></button>
         <img id="delorean" src="assets/delorean.webp">
         <h2 id="mph">0</h2>
     </section>
 
-    <script src="scripts.js"></script>
+    <!-- reflection section recounting my thoughts -->
+    <seciton id="reflection">
+        <h2>Reflection</h2>
+        <p>This was an interesting and fun experiment into how libraries can improve user experience. JQuery and
+            Animate.css are fascinating toolkits for me to experiment with more in the future. I found implementation
+            with jQuery challenging initially, as I had to wrap my head around it's unique syntax. However, once I got
+            the hang of it, it was surprisingly intuitive. I love the ease of selecting different HTML elements, and how
+            it unlocks so many advanced features that base JavaScript is limited in. I found it more challenging to use
+            in tandem with regular JavaScript, and I had to use AI for help in implementing it into my code correctly.
+            With more time for experimenting and trial and error, I think I can implement jQuery in a variety of unique
+            ways. I am excited to implement these ideas in the future!
+            <br>When it comes to Animate.css, I found it much easier to use than any JS libraries I tried to implement.
+            It was almost as easy as adding external fonts! The animations it adds are clean and classy, and I can see
+            how they would be helpful in designing modern websites. I definitely want to explore it and other libraries,
+            such as Hint.css, more in the future.
+            <br>Overall, I enjoyed testing out these new libraries, and I'm excited about the features they bring to
+            JavaScript! I would have liked to iterate more and flesh out my ideas, but I was limited in my time with a
+            very busy schedule. For future projects, I will look into more libraries and continue to push the limits of
+            my abilities within JavaScript, HTML, and CSS.
+        </p>
+    </seciton>
 
-    <!-- Remember to add your JavaScript file link here if you create one -->
+    <!-- script tag added at the bottom -->
+    <script src="scripts.js"></script>
 </body>
 
 </html>

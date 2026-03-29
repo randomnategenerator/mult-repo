@@ -18,23 +18,27 @@ h2 {
     color: #333;
 }
 
+/* falcon section is displayed in a grid to keep all of the buttons in the correct places */
 #falcon-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
+/* trivia buttons are displayed in a 2 column grid */
 #trivia-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+/* dictate the look of the trivia buttons themselves */
 #trivia-buttons button {
     font-size: 25px;
     padding: 50px;
     margin: 25px;
 }
 
+/* put the section 1 buttons and image in the correct spots */
 #left-button {
     justify-self: end;
 }
@@ -47,6 +51,7 @@ h2 {
     justify-self: start;
 }
 
+/* dictate the look of the section 4 start button */
 #start-button {
     justify-self: start;
     background-image: url("assets/gas-pedal.jpg");
@@ -55,6 +60,7 @@ h2 {
     padding: 100px;
 }
 
+/* dictate the look of the dvd and delorean images  */
 #dvd {
     width: 150px;
     position: absolute;
@@ -66,7 +72,13 @@ h2 {
     width: 300px;
 }
 
+/* add additional space for the reflection section */
+#reflection {
+    margin: 25px;
+    padding: 25px;
+}
 
+/* make the orbitron font class */
 .orbitron {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -74,12 +86,14 @@ h2 {
   font-style: normal;
 }
 
+/* dictate the look of the speedometer text */
 #mph {
     color: red;
     font-family: "Orbitron";
     font-size: 50px;
 }
 
+/* dictate the look of section 4, and set the elements within it to a grid */
 #choose-your-own-adventure {
     background-image: url(assets/hill-bg.jpg);
     height: 900px;
@@ -89,14 +103,14 @@ h2 {
     grid-template-columns: 1fr;
 }
 
+/* align the text of sections 1 & 2*/
 #image-movement,
 #interactive-trivia {
     text-align: center;
 }
 
+/* give the arrow buttons more space */
 .arrow-buttons {
     padding: 25px;
     margin: 25px;
 }
-
-/* Add specific styles for your sections, images, buttons, etc., here */
