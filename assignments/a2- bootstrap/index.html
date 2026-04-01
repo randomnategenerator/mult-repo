@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Harbor Seals</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#intro">Introduction</a>
-            <a href="#kinds">Different Kinds</a>
-            <a href="#population">Population</a>
-            <a href="#behaviour">Behaviour & Diet</a>
-            <a href="#seals">All-Star Seals</a>
+    <!-- usage of text-color, sticky positioning and padding classes -->
+    <header class="text-bg-primary sticky-top pl-2">
+        <!-- usage of navbar classes within nav semantic element -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- usage of auto margin class-->
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item"><p><a href="#intro" class="nav-link link-light">Introduction</a></p></li>
+                <li class="nav-item"><p><a href="#kinds" class="nav-link link-light">Different Kinds</a></p></li>
+                <li class="nav-item"><p><a href="#population" class="nav-link link-light">Population</a></p></li>
+                <li class="nav-item"><p><a href="#behaviour" class="nav-link link-light">Behaviour & Diet</a></p></li>
+                <li class="nav-item"><p><a href="#seals" class="nav-link link-light">All-Star Seals</a></p></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>All About <br>Harbor Seals!</h1>
-    </section>
-
     <section id="intro">
+        <h1>All About Harbor Seals!</h1>
         <h2>Introduction</h2>
         <p>Harbor Seals are a kind of seal found in the Northern Hemisphere. They are the most common kind of seal,
             being found in the Atlantic and Pacific oceans. Harbor seals can be brown, white, or grey, and are
@@ -161,9 +165,19 @@
             </figure>
             <p>Alright, this one's gonna make me cry. Freddie was a seal pup known for travelling far into London, being
                 spotted frequently by locals. He was named after Freddie Mercury due to his big whiskers and playful
-                demeanor. On March 21st, 2021, he was attacked by a dog, and unfortunately had to be put down. RIP Freddie :(</p>
+                demeanor. On March 21st, 2021, he was attacked by a dog, and unfortunately had to be put down. RIP
+                Freddie :(</p>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
