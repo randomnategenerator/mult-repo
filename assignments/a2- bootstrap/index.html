@@ -9,18 +9,28 @@
     <title>Harbor Seals</title>
 </head>
 
-<body>
+<body class="px-5">
     <!-- usage of text-color, sticky positioning and padding classes -->
     <header class="text-bg-primary sticky-top pl-2">
         <!-- usage of navbar classes within nav semantic element -->
         <nav class="navbar navbar-expand-lg">
             <!-- usage of auto margin class-->
             <ul class="navbar-nav m-auto">
-                <li class="nav-item"><p><a href="#intro" class="nav-link link-light">Introduction</a></p></li>
-                <li class="nav-item"><p><a href="#kinds" class="nav-link link-light">Different Kinds</a></p></li>
-                <li class="nav-item"><p><a href="#population" class="nav-link link-light">Population</a></p></li>
-                <li class="nav-item"><p><a href="#behaviour" class="nav-link link-light">Behaviour & Diet</a></p></li>
-                <li class="nav-item"><p><a href="#seals" class="nav-link link-light">All-Star Seals</a></p></li>
+                <li class="nav-item">
+                    <p><a href="#intro" class="nav-link link-light">Introduction</a></p>
+                </li>
+                <li class="nav-item">
+                    <p><a href="#kinds" class="nav-link link-light">Different Kinds</a></p>
+                </li>
+                <li class="nav-item">
+                    <p><a href="#population" class="nav-link link-light">Population</a></p>
+                </li>
+                <li class="nav-item">
+                    <p><a href="#behaviour" class="nav-link link-light">Behaviour & Diet</a></p>
+                </li>
+                <li class="nav-item">
+                    <p><a href="#seals" class="nav-link link-light">All-Star Seals</a></p>
+                </li>
             </ul>
         </nav>
     </header>
@@ -42,51 +52,56 @@
         <img class="border rounded mx-auto d-block" src="assets/intro-seal.png" alt="Harbor seal">
     </section>
 
-    <section class="container" id="kinds">
+    <section id="kinds">
         <h2>Different Kinds</h2>
         <p>There are five main subspecies of harbor seal:</p>
-        <ul class="row">
-            <li class="col">
-                <h3>Eastern Atlantic common seal</h3>
-                <figure>
-                    <!-- usage of shadow and rounded element modification classes -->
-                    <img class="shadow-lg rounded-pill" src="assets/kind-1.jpg">
-                    <figcaption><em>Found in Europe and Asia</em></figcaption>
-                </figure>
-            </li>
-            <li class="col">
-                <h3>Western Atlantic common seal</h3>
-                <figure>
-                    <img class="shadow-lg rounded-pill" src="assets/kind-2.jpg">
-                    <figcaption><em>Found in North America. The validity of this subspecies is debated, as it may be
-                            part of
-                            the Eastern Atlantic subspecies! Big drama in the seal community.</em></figcaption>
-                </figure>
-            </li>
-            <li class="col">
-                <h3>Ungava seal</h3>
-                <figure>
-                    <img class="shadow-lg rounded-pill" src="assets/kind-3.jpeg">
-                    <figcaption><em>Found in Canada. Endangered, and a rare example of a freshwater seal!</em>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="col">
-                <h3>Pacific harbor seal</h3>
-                <figure>
-                    <img class="shadow-lg rounded-pill" src="assets/kind-4.jpg">
-                    <figcaption><em>Found in western North America</em></figcaption>
-                </figure>
-            </li>
-            <li class="col">
-                <h3>Insular Seal</h3>
-                <figure>
-                    <img class="shadow-lg rounded-pill" src="assets/kind-5.webp">
-                    <figcaption><em>Found in eastern Asia. Not officially recognized as a subspecies, but as a pacific
-                            harbor seal.</em></figcaption>
-                </figure>
-            </li>
-        </ul>
+        <!-- usage of bootstrap gutter system -->
+        <div class="container">
+            <!-- usage of gutter spacing -->
+            <ul class="row gx-5 gy-5">
+                <li class="col">
+                    <h3>Eastern Atlantic common seal</h3>
+                    <figure>
+                        <!-- usage of shadow and rounded element modification classes -->
+                        <img class="shadow-lg rounded-pill w-100" src="assets/kind-1.jpg">
+                        <figcaption><em>Found in Europe and Asia</em></figcaption>
+                    </figure>
+                </li>
+                <li class="col">
+                    <h3>Western Atlantic common seal</h3>
+                    <figure>
+                        <img class="shadow-lg rounded-pill w-100" src="assets/kind-2.jpg">
+                        <figcaption><em>Found in North America. The validity of this subspecies is debated, as it may be
+                                part of
+                                the Eastern Atlantic subspecies! Big drama in the seal community.</em></figcaption>
+                    </figure>
+                </li>
+                <li class="col">
+                    <h3>Ungava seal</h3>
+                    <figure>
+                        <img class="shadow-lg rounded-pill w-100" src="assets/kind-3.jpeg">
+                        <figcaption><em>Found in Canada. Endangered, and a rare example of a freshwater seal!</em>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col">
+                    <h3>Pacific harbor seal</h3>
+                    <figure>
+                        <img class="shadow-lg rounded-pill w-100" src="assets/kind-4.jpg">
+                        <figcaption><em>Found in western North America</em></figcaption>
+                    </figure>
+                </li>
+                <li class="col">
+                    <h3>Insular Seal</h3>
+                    <figure>
+                        <img class="shadow-lg rounded-pill w-100" src="assets/kind-5.webp">
+                        <figcaption><em>Found in eastern Asia. Not officially recognized as a subspecies, but as a
+                                pacific
+                                harbor seal.</em></figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section id="population">
@@ -124,53 +139,62 @@
 
     <section id="seals">
         <h2>All-Star Seals</h2>
-        <div>
-            <h3>Andre</h3>
-            <figure>
-                <img src="assets/andre.jpg">
-                <figcaption><em>May 16th, 1961-July 19th, 1986</em></figcaption>
-            </figure>
-            <p>Andre was a seal adopted by Harry Goodridge, a tree surgeon in Maine. Harry raised Andre as a pup,
-                expecting him to return to the wild as he grew up. Instead, Andre chose to stay with Harry until he
-                died! This true story was portrayed in the 1994 film Andre. So cute!!!</p>
-        </div>
-        <div>
-            <h3>Hoover</h3>
-            <figure>
-                <img src="assets/hoover.jpg">
-                <figcaption><em>1971-July 25th, 1985</em></figcaption>
-            </figure>
-            <p>Hoover was a seal who imitated human speech! Adopted by George and Alice Swallow in Maine, he learnt how
-                to talk with his owners, able to say "Hello, there!" and "Come over here!" The Swallows kept him in
-                their bathtub until he grew too large, so they gave him to the New England Aquarium. The Aquarium staff
-                didn't believe he talked a long time, as he only started talking five years after first arriving at the
-                facility! oover was featured in Reader's
-                Digest, The New Yorker, and on Good Morning America! He was named after
-                the Hoover brand of vaccuum, because of how fast he would eat fish. H</p>
-        </div>
-        <div>
-            <h3>Popeye</h3>
-            <figure>
-                <img src="assets/popeye.jpg">
-                <figcaption><em>1990s-2010s</em></figcaption>
-            </figure>
-            <p>Popeye was a seal famous for her cloudy left eye. This is where her name came from, reminding tourists of
-                Popeye the Sailor. She started frequenting the Friday Harbor in Washington around 1995, become
-                well-known to the locals. The Port of Friday Harbor named her their official seal and made a granite
-                sculpture of her,
-                which still remains at the harbor! She is also notable for being the only recorded harbor seal to bite a
-                human! However, she was not blamed for this incident. Hooray!</p>
-        </div>
-        <div>
-            <h3>Freddie</h3>
-            <figure>
-                <img src="assets/freddie.jpg">
-                <figcaption><em>2020-March 21st, 2021</em></figcaption>
-            </figure>
-            <p>Alright, this one's gonna make me cry. Freddie was a seal pup known for travelling far into London, being
-                spotted frequently by locals. He was named after Freddie Mercury due to his big whiskers and playful
-                demeanor. On March 21st, 2021, he was attacked by a dog, and unfortunately had to be put down. RIP
-                Freddie :(</p>
+        <!-- usage of flex layout -->
+        <div class="d-flex flex-row justify-content-between align-items-center m-5 gap-5">
+            <div>
+                <h3>Andre</h3>
+                <figure>
+                    <img class="w-100 rounded" src="assets/andre.jpg">
+                    <figcaption><em>May 16th, 1961-July 19th, 1986</em></figcaption>
+                </figure>
+                <p>Andre was a seal adopted by Harry Goodridge, a tree surgeon in Maine. Harry raised Andre as a pup,
+                    expecting him to return to the wild as he grew up. Instead, Andre chose to stay with Harry until he
+                    died! This true story was portrayed in the 1994 film Andre. So cute!!!</p>
+            </div>
+            <div>
+                <h3>Hoover</h3>
+                <figure>
+                    <img class="w-100 rounded" src="assets/hoover.jpg">
+                    <figcaption><em>1971-July 25th, 1985</em></figcaption>
+                </figure>
+                <p>Hoover was a seal who imitated human speech! Adopted by George and Alice Swallow in Maine, he learnt
+                    how
+                    to talk with his owners, able to say "Hello, there!" and "Come over here!" The Swallows kept him in
+                    their bathtub until he grew too large, so they gave him to the New England Aquarium. The Aquarium
+                    staff
+                    didn't believe he talked a long time, as he only started talking five years after first arriving at
+                    the
+                    facility! oover was featured in Reader's
+                    Digest, The New Yorker, and on Good Morning America! He was named after
+                    the Hoover brand of vaccuum, because of how fast he would eat fish.</p>
+            </div>
+            <div>
+                <h3>Popeye</h3>
+                <figure>
+                    <img class="w-100 rounded" src="assets/popeye.jpg">
+                    <figcaption><em>1990s-2010s</em></figcaption>
+                </figure>
+                <p>Popeye was a seal famous for her cloudy left eye. This is where her name came from, reminding
+                    tourists of
+                    Popeye the Sailor. She started frequenting the Friday Harbor in Washington around 1995, become
+                    well-known to the locals. The Port of Friday Harbor named her their official seal and made a granite
+                    sculpture of her,
+                    which still remains at the harbor! She is also notable for being the only recorded harbor seal to
+                    bite a
+                    human! However, she was not blamed for this incident. Hooray!</p>
+            </div>
+            <div>
+                <h3>Freddie</h3>
+                <figure>
+                    <img class="w-100 rounded" src="assets/freddie.jpg">
+                    <figcaption><em>2020-March 21st, 2021</em></figcaption>
+                </figure>
+                <p>Alright, this one's gonna make me cry. Freddie was a seal pup known for travelling far into London,
+                    being
+                    spotted frequently by locals. He was named after Freddie Mercury due to his big whiskers and playful
+                    demeanor. On March 21st, 2021, he was attacked by a dog, and unfortunately had to be put down. RIP
+                    Freddie :(</p>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
