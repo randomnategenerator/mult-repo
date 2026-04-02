@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to Bootstrap's CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Harbor Seals</title>
 </head>
 
 <!-- Bootstrap class to give the whole page some padding around the x-axis -->
+
 <body class="px-5">
     <!-- usage of text-color, sticky positioning and padding classes -->
     <header class="text-bg-secondary sticky-top pl-2">
@@ -17,7 +19,7 @@
         <nav class="navbar navbar-expand-lg" id="sealNav">
             <!-- usage of auto margin class-->
             <ul class="navbar-nav m-auto">
-                <!--  -->
+                <!-- top navigation bar that sticks to the top of the screen as you scroll -->
                 <li class="nav-item">
                     <p><a href="#intro" class="nav-link link-light">Introduction</a></p>
                 </li>
@@ -38,7 +40,7 @@
     </header>
 
     <div>
-
+        <!-- intro section introducing the assignemnt, with a nice seal image -->
         <section id="intro">
             <!-- usage of centering text element class -->
             <h1 class="text-center">All About Harbor Seals!</h1>
@@ -51,11 +53,13 @@
                 <br>I chose them for this assignment because I think they
                 are
                 very cute! Let's dive into all there is know about <span class="fw-bold">harbor seals!</span>
+                <br>Information cited from <a href="https://en.wikipedia.org/wiki/Harbor_seal">Wikipedia</a>
             </p>
             <!-- usage of border rounding element and border element modification classes -->
             <img class="border rounded mx-auto d-block" src="assets/intro-seal.png" alt="Harbor seal">
         </section>
 
+        <!-- unordered list section for the different subspecies of harbor seals, implementing a Bootstrap grid -->
         <section id="kinds">
             <h2>Different Kinds</h2>
             <p>There are five main subspecies of harbor seal:</p>
@@ -106,6 +110,7 @@
             </div>
         </section>
 
+        <!-- section about harbor seal populations that uses a collapsable Bootstrap element for the information, with a clickable image -->
         <section id="population">
             <h2>Population</h2>
             <!-- usage of alert interactive element -->
@@ -136,6 +141,7 @@
             </p>
         </section>
 
+        <!-- section about seal behaviours and their diet, use an alert like the last section but a modal instead of a collapsable element -->
         <section id="behaviour">
             <h2>Behaviour & Diet</h2>
             <div class="alert alert-danger">
@@ -181,6 +187,7 @@
             </div>
         </section>
 
+        <!-- section about famous seals that uses a Bootstrap flex row -->
         <section id="seals">
             <h2>All-Star Seals</h2>
             <!-- usage of flex layout -->
@@ -253,6 +260,7 @@
             </div>
         </section>
 
+        <!-- reflection on how my experience was with Bootstrap -->
         <section>
             <h2>Reflection</h2>
             <p>Using Bootstrap was an interesting experiment in utilizing a framework to customize a webpage. There were
@@ -274,6 +282,7 @@
         </section>
 
     </div>
+    <!-- bootstrap javascript links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
