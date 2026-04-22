@@ -13,35 +13,36 @@
 
 <body>
     <header>
-        <!-- fix collapsing -->
-        <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting -->
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="assets/placeholder.png" width="30" height="30" padding-left="30px" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
-                aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navDropdown" class="navbar-collapse collapse">
-                <ul class="nav-item active">
-                    <!-- change this for each page! -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sem. 4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sem. 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sem. 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sem. 1</a>
-                    </li>
-                </ul>
+        <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <p class="navbar-brand p-3">
+                    Nate's Portfolio
+                </p>
+                <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
+                    aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navDropdown" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- change this for each page! -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sem. 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sem. 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sem. 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sem. 1</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,10 +55,10 @@
         </p>
     </section>
 
-    <section id="profileScroll">
-        <div id="scrollingContent">
-        <img id="pic" src="assets/placeholder.png">
-        <img class="w-50" src="assets/cosmic-bg.png">
+    <section id="profileSwipe">
+        <img class="position-absolute" src="assets/placeholder.png">
+        <div id="spaceBackground">
+            <img class="object-fill-xl-contain position-sticky" src="assets/cosmic-bg.png">
         </div>
     </section>
 
