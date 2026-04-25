@@ -1,18 +1,19 @@
-// gsap.to('#profileScroll', {
-// 	scrollTrigger: '#profileScroll', 
-// 	scrub: true,
-// 	y: "-=50"
-// });
+// https://codepen.io/jamiem89/pen/gOevYyP
 
-gsap.set("#spaceBackground", {xPercent: -50});
+let scrollImages = document.querySelectorAll('.scroll-image')
 
-let xGo = gsap.quickTo("#spaceBackground", "x", {duration: 0.5, ease:"power3"})
-
-let hoverSection = document.getElementById("profileSwipe")
-
-hoverSection.addEventListener("mousemove", e => {
-  xGo(e.clientX);
-});
+scrollImages.forEach(el => {
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: el,
+			start: 'top 10%',
+			end: 'bottom center',
+			toggleActions: 'play none reverse none',
+			scrub: 1
+		}
+	});
+	tl.to(el, {opacity: 0, yPercent: -10})
+})
 
 
 
