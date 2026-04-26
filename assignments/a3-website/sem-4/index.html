@@ -12,7 +12,6 @@
 
 <body>
     <header>
-        <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="../index.html" class="navbar-brand p-3">
@@ -25,9 +24,11 @@
                 <div id="navDropdown" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
+                            <!-- links are changed accordingly for every item in the header and footer across the different pages -->
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
+                            <!-- nav-link active class is changed to visually denote which page the user is on -->
                             <a class="nav-link active" href="#">Sem. 4</a>
                         </li>
                         <li class="nav-item">
@@ -45,6 +46,7 @@
         </nav>
     </header>
 
+    <!-- intro section that explains some of the skills I learnt in this semester -->
     <section>
         <h1 class="display-3 mx-auto p-3">Semester 4</h1>
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
@@ -54,14 +56,19 @@
         </p>
     </section>
 
+    <!-- section that encapsulates the project cards. the section uses flex, while the cards are displayed in a grid, all using Bootstrap -->
     <section class="d-flex justify-content-center">
+        <!-- Hover.css used to make the cards have a shadow glow when hovered over -->
         <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
+                    <!-- Hover.css used to make the images in the cards wobble if they are clickable -->
                     <a href="../assets/echo-guidelines.pdf" class="hvr-wobble-top">
-                        <img src="../assets/echo-guide.png" class="img-fluid rounded-start">
+                        <img src="../assets/echo-guide.png" class="img-fluid rounded-start"
+                            alt="The cover of the brand guide for my 'Echo' company">
                     </a>
                 </div>
+                <!-- cards include an image of the project and an explanation of what it is and what skills I learnt. This template is used across every Semester page -->
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Echo Brand</h5>
@@ -92,7 +99,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="https://www.youtube.com/watch?v=-2TBEFEo454" class="hvr-wobble-top">
-                        <img src="../assets/home-movie.png" class="img-fluid rounded-start">
+                        <img src="../assets/home-movie.png" class="img-fluid rounded-start"
+                            alt="A screenshot of a plush seal from my 'Night at the Museum' home movie recreation">
                     </a>
                 </div>
 
@@ -121,7 +129,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="https://youtu.be/QiG3odPTRek" class="hvr-wobble-top">
-                        <img src="../assets/audio-animation.png" class="img-fluid rounded-start">
+                        <img src="../assets/audio-animation.png" class="img-fluid rounded-start"
+                            alt="A screenshot from my audio-synced animation">
                     </a>
                 </div>
                 <div class="col-md-8">

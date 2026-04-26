@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GSAP JS library -->
+    <!-- GSAP JS library: https://gsap.com/-->
+    <!-- I used GSAP to animate my cover images on the homepage. The code was done in the scripts JS file -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <!-- hover.css library  https://ianlunn.github.io/Hover/-->
+    <!-- hover.css library:  https://ianlunn.github.io/Hover/-->
+    <!-- Hover.css does exactly what it sounds like; creates nice hover effects! I used it to denote clickable items across my website, using it on cards, images, and border shadow effects -->
     <link rel="stylesheet" href="styles/hover-min.css">
     <title>Nate Dayton: Portfolio</title>
 </head>
 
 <body>
+    <!-- header semantic element -->
     <header>
+        <!-- Bootstrap navbar used for navigation in the header -->
         <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand p-3">
                     Nate's Portfolio
                 </a>
+                <!-- Navigation collapses to a hamburger menu on mobile, while all the options display on desktop -->
                 <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
                     aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- collapsable navigation in the header uses Bootstrap navbar classes and an unordered list -->
                 <div id="navDropdown" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <!-- change this for each page! -->
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -48,6 +53,7 @@
         </nav>
     </header>
 
+    <!-- intro section using Bootstrap padding and margin classes. These are used all throughout my website -->
     <section>
         <h1 class="display-3 mx-auto p-3">Welcome to <br>Nate's Portfolio!</h1>
         <p class="p-3">This website hosts all of my work through <b>Interactive Design & Technology.</b> Check
@@ -57,15 +63,20 @@
         </p>
     </section>
 
+    <!-- GSAP implementation: images fade away as the user scrolls. Bootstrap is also implemented to center the images -->
     <section class="text-center">
-        <img class="scroll-image img-fluid" src="assets/ProfilePic.jpg">
+        <img class="scroll-image img-fluid" src="assets/ProfilePic.jpg"
+            alt="A picture of me standing in front of a shed">
     </section>
 
     <section class="text-center">
-        <img class="scroll-image img-fluid" src="assets/nate-space.png">
+        <img class="scroll-image img-fluid" src="assets/nate-space.png"
+            alt="The same picture of me, but the background is in space">
     </section>
 
+    <!-- featured projects section using a Bootstrap carousel -->
     <section class="py-5">
+        <!-- Bootstrap classes used for horizontal rules -->
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
         <h2 class="text-center display-4">Featured</h2>
         <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
@@ -82,30 +93,37 @@
                 </div>
                 <div class="carousel-inner">
                     <a href="sem-3/index.html">
-                    <div class="carousel-item active">
-                        <img src="assets/website-redesign-cover.png" class="object-fit-cover border rounded img-fluid">
-                        <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
-                            <h5 class="fs-2">Website Re-Design</h5>
+                        <div class="carousel-item active">
+                            <!-- images grow on hover using Hover.css -->
+                            <img src="assets/website-redesign-cover.png"
+                                class="object-fit-cover border rounded img-fluid"
+                                alt="The homepage of my Town of Rouleau website redesign">
+                                <!-- text on the carousel is given a dark background to give contrast against the images -->
+                            <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
+                                <h5 class="fs-2">Website Re-Design</h5>
+                            </div>
                         </div>
-                    </div>
                     </a>
                     <a href="sem-2/index.html">
-                    <div class="carousel-item">
-                        <img src="assets/personal-website-cover.png" class="object-fit-cover border rounded img-fluid">
-                        <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
-                            <h5 class="fs-2">Personal Website</h5>
+                        <div class="carousel-item">
+                            <img src="assets/personal-website-cover.png"
+                                class="object-fit-cover border rounded img-fluid" alt="The homepage of my old website">
+                            <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
+                                <h5 class="fs-2">Personal Website</h5>
+                            </div>
                         </div>
-                    </div>
                     </a>
                     <a href="sem-3/index.html">
-                    <div class="carousel-item">
-                        <img src="assets/brand-guide-cover.png" class="object-fit-cover border rounded img-fluid">
-                        <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
-                            <h5 class="fs-2">Brand Guide</h5>
+                        <div class="carousel-item">
+                            <img src="assets/brand-guide-cover.png" class="object-fit-cover border rounded img-fluid"
+                                alt="The cover oof the brand guide for my 'Portal' company">
+                            <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
+                                <h5 class="fs-2">Brand Guide</h5>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
+                <!-- buttons for the carousel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#featuredProjects"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,12 +139,15 @@
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
     </section>
 
+    <!-- Bootstrap card section -->
     <!-- got some help from ai and Bootstrap grid and card documentation, ai just for spacing cards within a grid responsively -->
     <section class="container p-0 text-center">
         <div class="row g-5 p-4">
             <div class="col-sm-3">
+                <!-- cards use hover.css to grow and get a shadow -->
                 <div class="card hvr-grow-shadow">
-                    <img src="assets/echo-guide-cover.png" class="card-img-top">
+                    <img src="assets/echo-guide-cover.png" class="card-img-top"
+                        alt="The cover of the brand guide for my 'Echo' company">
                     <div class="card-body">
                         <a href="sem-4/index.html" class="btn btn-primary">SEMESTER 4</a>
                     </div>
@@ -135,7 +156,8 @@
 
             <div class="col-sm-3">
                 <div class="card hvr-grow-shadow">
-                    <img src="assets/website-redesign-mobile-cover.png" class="card-img-top">
+                    <img src="assets/website-redesign-mobile-cover.png" class="card-img-top"
+                        alt="The mobile homepage of my Town of Rouleau website redesign">
                     <div class="card-body">
                         <a href="sem-3/index.html" class="btn btn-primary">SEMESTER 3</a>
                     </div>
@@ -144,7 +166,8 @@
 
             <div class="col-sm-3">
                 <div class="card hvr-grow-shadow">
-                    <img src="assets/personal-website-cover.png" class="card-img-top">
+                    <img src="assets/personal-website-cover.png" class="card-img-top"
+                        alt="The homepage of my personal website">
                     <div class="card-body">
                         <a href="sem-2/index.html" class="btn btn-primary">SEMESTER 2</a>
                     </div>
@@ -153,7 +176,7 @@
 
             <div class="col-sm-3">
                 <div class="card hvr-grow-shadow">
-                    <img src="assets/menu-cover-cover.png" class="card-img-top">
+                    <img src="assets/menu-cover-cover.png" class="card-img-top" alt="My menu cover design">
                     <div class="card-body">
                         <a href="sem-1/index.html" class="btn btn-primary">SEMESTER 1</a>
                     </div>
@@ -163,8 +186,10 @@
 
     </section>
 
+    <!-- Bootstrap footer, implemented and adjusted based off the Bootstrap example docs -->
     <section class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center px-0 mx-0 py-5 my-5 border-top">
+            <!-- Like the navbar, this footer uses an unordered list for all the items, but does not collapse into a hamburger menu -->
             <ul class="nav col-md-6 justify-content-start">
                 <li class="nav-item"><a class="nav-link p-4" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link p-4" href="sem-4/index.html">Semester 4</a></li>
@@ -177,6 +202,7 @@
 
 </body>
 
+<!-- script tags for my JavaScript, Bootstrap, and GSAP -->
 <script src="scripts.js"></script>
 <!-- bootstrap links for bootstrap implementation. had these in the wrong place, AI spotted this mistake and i implemented it in the right spot-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
