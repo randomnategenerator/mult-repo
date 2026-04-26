@@ -15,8 +15,6 @@ scrollImages.forEach(el => {
 	tl.to(el, {opacity: 0, yPercent: -10})
 })
 
-
-
 const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {

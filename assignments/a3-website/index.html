@@ -7,8 +7,8 @@
     <!-- GSAP JS library -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- add animate on scroll library!!!! -->
+    <!-- hover.css library  https://ianlunn.github.io/Hover/-->
+    <link rel="stylesheet" href="styles/hover-min.css">
     <title>Nate Dayton: Portfolio</title>
 </head>
 
@@ -17,9 +17,9 @@
         <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <p class="navbar-brand p-3">
+                <a href="#" class="navbar-brand p-3">
                     Nate's Portfolio
-                </p>
+                </a>
                 <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
                     aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,11 +58,11 @@
     </section>
 
     <section class="text-center">
-        <img class="scroll-image" src="assets/ProfilePic.jpg">
+        <img class="scroll-image img-fluid" src="assets/ProfilePic.jpg">
     </section>
 
     <section class="text-center">
-        <img class="scroll-image" src="assets/nate-space.png">
+        <img class="scroll-image img-fluid" src="assets/nate-space.png">
     </section>
 
     <section class="py-5">
@@ -70,7 +70,7 @@
         <h2 class="text-center display-4">Featured</h2>
         <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
         <!-- had some help from AI to fix my issues with data-bs-target and sizing, to center the carousel, and to implement my links in the correct places -->
-        <div class="d-flex justify-content-center m-5">
+        <div class="d-flex justify-content-center m-5 hvr-grow">
             <div id="featuredProjects" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#featuredProjects" data-bs-slide-to="0" class="active"
@@ -83,7 +83,7 @@
                 <div class="carousel-inner">
                     <a href="sem-3/index.html">
                     <div class="carousel-item active">
-                        <img src="assets/website-redesign-cover.png" class="object-fit-cover border rounded">
+                        <img src="assets/website-redesign-cover.png" class="object-fit-cover border rounded img-fluid">
                         <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
                             <h5 class="fs-2">Website Re-Design</h5>
                         </div>
@@ -91,7 +91,7 @@
                     </a>
                     <a href="sem-2/index.html">
                     <div class="carousel-item">
-                        <img src="assets/personal-website-cover.png" class="object-fit-cover border rounded">
+                        <img src="assets/personal-website-cover.png" class="object-fit-cover border rounded img-fluid">
                         <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
                             <h5 class="fs-2">Personal Website</h5>
                         </div>
@@ -99,7 +99,7 @@
                     </a>
                     <a href="sem-3/index.html">
                     <div class="carousel-item">
-                        <img src="assets/brand-guide-cover.png" class="object-fit-cover border rounded">
+                        <img src="assets/brand-guide-cover.png" class="object-fit-cover border rounded img-fluid">
                         <div class="carousel-caption d-none d-md-block bg-dark rounded-3">
                             <h5 class="fs-2">Brand Guide</h5>
                         </div>
@@ -121,12 +121,12 @@
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
     </section>
 
-    <!-- got some help from ai and Bootstrap grid and card coumentation, ai just for spacing cards within a grid responsively -->
-    <section class="container p-1 text-center">
+    <!-- got some help from ai and Bootstrap grid and card documentation, ai just for spacing cards within a grid responsively -->
+    <section class="container p-0 text-center">
         <div class="row g-5 p-4">
             <div class="col-sm-3">
-                <div class="card p-3">
-                    <img src="assets/placeholder.png" class="card-img-top">
+                <div class="card hvr-grow-shadow">
+                    <img src="assets/echo-guide-cover.png" class="card-img-top">
                     <div class="card-body">
                         <a href="sem-4/index.html" class="btn btn-primary">SEMESTER 4</a>
                     </div>
@@ -134,8 +134,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card p-3">
-                    <img src="assets/placeholder.png" class="card-img-top">
+                <div class="card hvr-grow-shadow">
+                    <img src="assets/website-redesign-mobile-cover.png" class="card-img-top">
                     <div class="card-body">
                         <a href="sem-3/index.html" class="btn btn-primary">SEMESTER 3</a>
                     </div>
@@ -143,8 +143,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card p-3">
-                    <img src="assets/placeholder.png" class="card-img-top">
+                <div class="card hvr-grow-shadow">
+                    <img src="assets/personal-website-cover.png" class="card-img-top">
                     <div class="card-body">
                         <a href="sem-2/index.html" class="btn btn-primary">SEMESTER 2</a>
                     </div>
@@ -152,8 +152,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card p-3">
-                    <img src="assets/placeholder.png" class="card-img-top">
+                <div class="card hvr-grow-shadow">
+                    <img src="assets/menu-cover-cover.png" class="card-img-top">
                     <div class="card-body">
                         <a href="sem-1/index.html" class="btn btn-primary">SEMESTER 1</a>
                     </div>

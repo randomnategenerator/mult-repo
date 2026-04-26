@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/hover-min.css">
     <title>Semester 4</title>
 </head>
 
@@ -15,30 +15,29 @@
         <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <p class="navbar-brand p-3">
+                <a href="../index.html" class="navbar-brand p-3">
                     Nate's Portfolio
-                </p>
+                </a>
                 <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
                     aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="navDropdown" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <!-- change this for each page! -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sem. 4</a>
+                            <a class="nav-link active" href="#">Sem. 4</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-3/index.html">Sem. 3</a>
+                            <a class="nav-link" href="../sem-3/index.html">Sem. 3</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-2/index.html">Sem. 2</a>
+                            <a class="nav-link" href="../sem-2/index.html">Sem. 2</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-1/index.html">Sem. 1</a>
+                            <a class="nav-link" href="../sem-1/index.html">Sem. 1</a>
                         </li>
                     </ul>
                 </div>
@@ -49,20 +48,39 @@
     <section>
         <h1 class="display-3 mx-auto p-3">Semester 4</h1>
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
-        <p class="p-3">Lorem Ipsum Dolor
+        <p class="p-3">My classes in Semester 4 included <b>Web Development, Social Media, Video, and Audio.</b> I
+            gained skills in using <b>GitHub, Adobe Premiere & Audition,</b> and <b>understanding marketing across
+                social media platforms.</b> Here are my proudest projects from this semester!
         </p>
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="../assets/echo-guidelines.pdf" class="hvr-wobble-top">
+                        <img src="../assets/echo-guide.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">Echo Brand</h5>
+                        <footer class="blockquote-footer m-2">DGTL-112 - Fictional Music & Social Media Platform
+                        </footer>
+                        <p class="card-text"><b>Echo</b> is a fictional brand I developed for my Social Media Marketing
+                            class. Echo is a music streaming platform & social media service tied into one! Echo focuses
+                            on connection, discovery, and inclusivity, with advanced social features that make
+                            connecting over your favourite music possible. This assignment was an exercise in developing
+                            a brand identity, complete with tone of voice, colour palettes, typography, and more! The
+                            central focus of this assignment was to create brand guidelines for social media usage,
+                            explaining and displaying how Echo content should look across social media platforms.
+                            <br><b>Click the image to check out the full brand guide,</b> and follow Echo on <a
+                                href="https://www.facebook.com/profile.php?id=61573355917369">Facebook,</a> <a
+                                href="https://www.instagram.com/echomusicsupport/">Instagram</a>
+                            and <a href="https://www.threads.com/@echomusicsupport">Threads</a> to see both custom and
+                            curated content I have developed for each
+                            platform!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -70,15 +88,28 @@
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="https://www.youtube.com/watch?v=-2TBEFEo454" class="hvr-wobble-top">
+                        <img src="../assets/home-movie.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
+
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">Night at the Museum Home Movie Recreation</h5>
+                        <footer class="blockquote-footer m-2">DGTL-105 - Video Editing Home Movie
+                        </footer>
+                        <p class="card-text">This video is a project where I recreated two minutes of Night at the
+                            Museum, on a $0 budget. This assignment involved storyboard sketches, video editing
+                            techniques in <b>Adobe Premiere,</b> and working with others to produce a finished product.
+                            The encouragement to think outside the box to recreate complex scenes made me problem solve
+                            and come up with creative solutions!
+                            <br>Click on the image to see the full two
+                            minutes of Night at the Museum, recreated in beautiful
+                            amateur glory.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -86,15 +117,27 @@
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="https://youtu.be/QiG3odPTRek" class="hvr-wobble-top">
+                        <img src="../assets/audio-animation.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">Syncing Audio to an Animation</h5>
+                        <footer class="blockquote-footer m-2">DGTL-101 - Audio Editing and Syncing
+                        </footer>
+                        <p class="card-text">This Audio assignment involved gathering, editing, and syncing up audio
+                            clips to a provided animation. I edited all of the music and sound effects in <b>Adobe
+                                Audition,</b> utilizing stock clips from <a href="https://freesound.org/">Freesound.</a>
+                            This assignment showed me the
+                            importance of being detailed-oriented and meticulous in creating a finished product, as
+                            syncing the audio up to the animation required immense precision.
+                            <br>Click on the image to watch the completed video, with
+                            my audio included!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -106,9 +149,9 @@
             <ul class="nav col-md-6 justify-content-start">
                 <li class="nav-item"><a class="nav-link p-4" href="../index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link p-4" href="#">Semester 4</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-3/index.html">Semester 3</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-2/index.html">Semester 2</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-1/index.html">Semester 1</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-3/index.html">Semester 3</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-2/index.html">Semester 2</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-1/index.html">Semester 1</a></li>
             </ul>
         </footer>
     </section>

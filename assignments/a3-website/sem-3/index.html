@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/hover-min.css">
     <title>Semester 3</title>
 </head>
 
@@ -15,9 +15,9 @@
         <!-- referred to Bootstrap documentation and had some help from AI to fix my issues with using outdated bootstrap targetting and dropdown issues -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <p class="navbar-brand p-3">
+                <a href="../index.html" class="navbar-brand p-3">
                     Nate's Portfolio
-                </p>
+                </a>
                 <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown"
                     aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,19 +25,19 @@
                 <div id="navDropdown" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-4/index.html">Sem. 4</a>
+                            <a class="nav-link" href="../sem-4/index.html">Sem. 4</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sem. 3</a>
+                            <a class="nav-link active" href="#">Sem. 3</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-2/index.html">Sem. 2</a>
+                            <a class="nav-link" href="../sem-2/index.html">Sem. 2</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sem-1/index.html">Sem. 1</a>
+                            <a class="nav-link" href="../sem-1/index.html">Sem. 1</a>
                         </li>
                     </ul>
                 </div>
@@ -48,20 +48,43 @@
     <section>
         <h1 class="display-3 mx-auto p-3">Semester 3</h1>
         <hr class="border border-dark border-2 opacity-100 rounded-4 me-5 ms-3">
-        <p class="p-3">Lorem Ipsum Dolor
+        <p class="p-3">My classes in Semester 3 included <b>Web Development, UX Design, Digital Marketing, and
+                Electronic Publishing.</b> I gained skills in using <b>JavaScript, Figma prototyping,</b> and <b>Adobe
+                InDesign.</b> Here are my proudest projects from this semester!
         </p>
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="https://www.figma.com/proto/5qjeV54G59FfH80s55Wn85/Nate-s-Prototype--Testing-Day-Copy?node-id=9-288&page-id=2%3A12&t=noxEeouQEnpyvzka-1"
+                        class="hvr-wobble-top">
+                        <img src="../assets/website-redesign-mobile.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">Town of Rouleau Website Redesign</h5>
+                        <footer class="blockquote-footer m-2">DSGN-202 - Creating a Prototype in Figma & Understanding
+                            UX Principles
+                        </footer>
+                        <p class="card-text">This <b>website redesign prototype</b> was done in <b>Figma,</b> teaching
+                            me much about UX design fundamentals and Figma's advanced features. For this assignment, I
+                            had to choose a poorly made website (<a
+                                href="https://www.townofrouleau.com/default.asp">check out the original here...</a> it's
+                            a piece of
+                            work) and redesign it from the ground up, without changing,
+                            adding, or removing any content from the original. It was an excellent exercise in taking
+                            what a client gives you and making the best of it! For my prototype, I focused on improving
+                            navigation, creating a consistent responsive design across viewports, and consolidating
+                            information into cards.
+                            <br>Click on the image to try out the prototype for yourself!
+                            <br>This project was showcased at SaskPolytech's <b>Designing Tomorrow Student Showcase,</b>
+                            where I got to display and explain my work to students, teachers and industry members! This
+                            was an amazing opportunity that I am very grateful for! I believe this accomplishment speaks
+                            to the strength of my work.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -69,15 +92,26 @@
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="../assets/ND-brand-style-guide.pdf" class="hvr-wobble-top">
+                        <img src="../assets/brand-guide.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">Portal Brand</h5>
+                        <footer class="blockquote-footer m-2">MKTG-203 - Creating Brand Guidelines
+                        </footer>
+                        <p class="card-text">For this assignment, I had to create a fictional brand to make guidelines
+                            for. This involved developing a logo, assets, and overall identity. The brand is
+                            <b>Portal,</b> a computer accessories company. The brand identity speaks to innovation,
+                            accessible, and premium peripherals that inspire confidence in the consumer. The brand
+                            guidelines reflect this, outlining detailed instructions on how to use Portal's logo, colour
+                            palettes, and graphics.
+                            <br>Click the image to see the full brand guide!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -85,15 +119,26 @@
     </section>
 
     <section class="d-flex justify-content-center">
-        <div class="card m-3" style="max-width:1500px">
+        <div class="card m-3 hvr-glow" style="max-width:1500px">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="../assets/cosmic-bg.png" class="img-fluid rounded-start">
+                    <a href="../assets/ND-GRPH-202-A2-4Page-final.pdf" class="hvr-wobble-top">
+                        <img src="../assets/4-page.png" class="img-fluid rounded-start">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project</h5>
-                        <p class="card-text">Lorem Ipsum Dolor</p>
+                        <h5 class="card-title">4-Page Magazine Layout</h5>
+                        <footer class="blockquote-footer m-2">GRPH-202 - Using Adobe InDesign & Utilizing Client
+                            Materials
+                        </footer>
+                        <p class="card-text">This assignment had me using provided text and images to create a 4-page
+                            magazine layout. I created my layouts in <b>Adobe InDesign,</b> using character styles to
+                            format text and Photoshop to resize images. Similarly to the Town of Rouleau website
+                            redesign, I could not change or add any content, so this was a fantastic exercise in
+                            creating an aesthetically pleasing design from client-provided content.
+                            <br>Click the image to see the full magazine spread!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -104,10 +149,10 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center px-0 mx-0 py-5 my-5 border-top">
             <ul class="nav col-md-6 justify-content-start">
                 <li class="nav-item"><a class="nav-link p-4" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-4/index.html">Semester 4</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-4/index.html">Semester 4</a></li>
                 <li class="nav-item"><a class="nav-link p-4" href="#">Semester 3</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-2/index.html">Semester 2</a></li>
-                <li class="nav-item"><a class="nav-link p-4" href="sem-1/index.html">Semester 1</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-2/index.html">Semester 2</a></li>
+                <li class="nav-item"><a class="nav-link p-4" href="../sem-1/index.html">Semester 1</a></li>
             </ul>
         </footer>
     </section>
